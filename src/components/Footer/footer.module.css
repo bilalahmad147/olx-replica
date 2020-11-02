@@ -3,4 +3,21 @@
 }
 .paragraph{
     font-size: 22px;
+    margin: 20px;
+}
+.heading1{
+    margin: 20px;
+    font-weight: bold;
+}
+.heading2{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.linkImg img{
+    width: 130px;
+    height: 40px;
+    margin: 10px;
+}
+.linkImg{
+    margin-left: 10px;
 }

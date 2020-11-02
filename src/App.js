@@ -10,26 +10,8 @@ function App() {
     <div>
       <Navebar />
       <Navbar2 />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <Footer />
       <Footer2 />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }
