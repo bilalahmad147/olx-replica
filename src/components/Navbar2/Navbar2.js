@@ -33,7 +33,7 @@ function Navbar2() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <img className={style.bannerimg} src={image}></img>
+            <img alt='background poster' className={style.bannerimg} src={image}></img>
         </div>
     )
 }
