@@ -2,12 +2,13 @@ import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navebar from './components/Navbar/Navbar';
+import Navbar2 from './components/Navbar2/Navbar2';
 
 function App() {
   return (
     <div>
       <Navebar />
-      <h1>hello world</h1>
+      <Navbar2 />
     </div>
   );
 }
