@@ -1,0 +1,13 @@
+.product{
+    padding: 20px;
+    width: auto;
+    height: 450px;
+}
+.colCard{
+    padding: 10px;
+}
+.showMore{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

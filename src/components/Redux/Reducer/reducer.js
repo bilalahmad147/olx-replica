@@ -3,6 +3,9 @@ import { ADD_DETAIL } from '../Action/action'
 const initialState = {
     thingsForSale: [
         { id: 1, name: "car", disc: "new car" },
+        { id: 1, name: "car", disc: "new car" },
+        { id: 1, name: "car", disc: "new car" },
+        { id: 1, name: "car", disc: "new car" },
     ]
 }
 
