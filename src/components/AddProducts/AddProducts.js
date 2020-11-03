@@ -1,28 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import style from './addProduct.module.css'
+import { useDispatch } from 'react-redux';
+import { addDetail } from '../Redux/Action/action'
+
+
 
 function AddProducts() {
+
+    const dispatch = useDispatch()
+    const [name, setName] = useState('')
+    const [price, setPrice] = useState('')
+    const [imgUrl, setImgUrl] = useState('')
+
     return (
         <div>
             <Form className={style.formInput}>
                 <h2>Add Product Detail</h2>
+
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Enter Item Name:</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Item Name..." />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
+                    <Form.Control type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Enter Item Name..." />
                 </Form.Group>
 
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Enter Item Price:</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Item Price..." />
+                    <Form.Control type="text" value={price} onChange={e => setPrice(e.target.value)} placeholder="Enter Item Price..." />
                 </Form.Group>
-                <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
+
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Enter Image URL:</Form.Label>
+                    <Form.Control type="text" value={imgUrl} onChange={e => setImgUrl(e.target.value)} placeholder="Enter Image URL..." />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+
+                <Button variant="primary" onClick={() => { dispatch(addDetail(name,price,imgUrl))}}>
                     Add Product
                 </Button>
             </Form>
