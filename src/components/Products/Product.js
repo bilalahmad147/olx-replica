@@ -1,12 +1,13 @@
 import React from 'react'
 import { Card, Button, Col, Row, Container } from 'react-bootstrap';
 import style from './product.module.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { addDetail } from '../Redux/Action/action'
 
 function Product() {
 
-
     const products = useSelector(state => state.thingsForSale)
+    const dispatch = useDispatch()
     console.log(products)
 
     return (
@@ -36,7 +37,7 @@ function Product() {
                 </Row>
             </Container>
             <div className={style.showMore}>
-                <Button variant="primary">SHOW MORE</Button>
+                <Button variant="primary" onClick={() => { dispatch(addDetail()) }}>SHOW MORE</Button>
             </div>
         </div>
     )
