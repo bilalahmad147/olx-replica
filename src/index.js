@@ -15,7 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route element={<App />} path='/' />
         <Route element={<AddProducts />} path='/sell' />
-        <Route element={<SingleProduct />} path='/itemDetail' />
+        <Route element={<SingleProduct />} path='/:name' />
       </Routes>
     </Router>
   </Provider>,

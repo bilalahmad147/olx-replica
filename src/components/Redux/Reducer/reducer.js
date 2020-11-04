@@ -2,10 +2,10 @@ import { ADD_DETAIL } from '../Action/action'
 
 const initialState = {
     thingsForSale: [
-        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "tehremm", desc: "first member" },
-        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "tehremm", desc: "first member" },
-        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "tehremm", desc: "first member" },
-        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "tehremm", desc: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Tehreem", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Hira", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Fizza", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Nabiha", price: "first member" },
     ]
 }
 

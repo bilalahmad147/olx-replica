@@ -18,16 +18,16 @@ function Product() {
                 <Row>
                     {products.map((obj, ind) => {
                         return (
-                            <Col className={style.f} sm={6} md={4} lg={3}>
+                            <Col key={ind} className={style.f} sm={6} md={4} lg={3}>
                                 <div>
-                                    <Card className={style.product} key={ind} style={{ width: '18rem' }}>
+                                    <Card className={style.product} style={{ width: '18rem' }}>
                                         <Card.Img variant="top" src={obj.imgUrl} />
                                         <Card.Body>
                                             <Card.Title>{obj.name}</Card.Title>
                                             <Card.Text>
-                                                {obj.desc}
+                                                {obj.price}
                                             </Card.Text>
-                                            <Link to='/itemDetail'><Button variant="primary">SHOW DETAIL</Button></Link>
+                                            <Link to={`/${obj.name}`}><Button variant="primary">SHOW DETAIL</Button></Link>
                                         </Card.Body>
                                     </Card>
                                 </div></Col>
