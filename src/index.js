@@ -5,10 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './components/Redux/Store'
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
+import AddProducts from './components/AddProducts/AddProducts';
+import SingleProduct from './components/SingleProduct/SingleProduct';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <Routes>
+        <Route element={<App />} path='/' />
+        <Route element={<AddProducts />} path='/sell' />
+        <Route element={<SingleProduct />} path='/itemDetail' />
+      </Routes>
+    </Router>
   </Provider>,
   document.getElementById('root')
 );

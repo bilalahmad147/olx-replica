@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap'
 import style from './addProduct.module.css'
 import { useDispatch } from 'react-redux';
 import { addDetail } from '../Redux/Action/action'
+import { Link } from 'react-router-dom'
 
 
 
@@ -33,9 +34,11 @@ function AddProducts() {
                     <Form.Control type="text" value={imgUrl} onChange={e => setImgUrl(e.target.value)} placeholder="Enter Image URL..." />
                 </Form.Group>
 
-                <Button variant="primary" onClick={() => { dispatch(addDetail(name,price,imgUrl))}}>
-                    Add Product
-                </Button>
+                <Link to='/'>
+                    <Button variant="primary" onClick={() => { dispatch(addDetail(name, price, imgUrl)) }}>
+                        Add Product
+                    </Button>
+                </Link>
             </Form>
         </div>
     )

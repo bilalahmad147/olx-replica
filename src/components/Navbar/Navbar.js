@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Form, Button } from 'react-bootstrap';
 import style from './navbar.module.css';
+import { Link } from 'react-router-dom'
 
 function Navebar() {
     return (
@@ -17,7 +18,7 @@ function Navebar() {
                         <Button variant="primary">&#128269;</Button>
                     </Form>
                     <Button className={style.navbarLogin} variant="link">Login</Button>
-                    <Button className={style.sellBtn} variant="danger">+SELL</Button>
+                    <Link to='/Sell'><Button className={style.sellBtn} variant="danger">+SELL</Button></Link>
                 </Navbar.Collapse>
             </Navbar>
         </div>

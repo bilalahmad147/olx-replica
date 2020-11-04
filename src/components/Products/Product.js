@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Button, Col, Row, Container } from 'react-bootstrap';
 import style from './product.module.css';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom'
 
 function Product() {
 
@@ -26,7 +27,7 @@ function Product() {
                                             <Card.Text>
                                                 {obj.desc}
                                             </Card.Text>
-                                            <Button variant="primary">SHOW DETAIL</Button>
+                                            <Link to='/itemDetail'><Button variant="primary">SHOW DETAIL</Button></Link>
                                         </Card.Body>
                                     </Card>
                                 </div></Col>
