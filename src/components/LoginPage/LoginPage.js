@@ -36,6 +36,10 @@ function LoginPage() {
             let createUser = {
                 name: user.displayName,
                 email: user.email
+            }
+            
+            firebase.database().ref('/').child(`users/${name}`).set(createUser.email)
+
         }).catch(function (error) {
             console.log(error.message)
         });
