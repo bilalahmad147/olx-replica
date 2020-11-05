@@ -8,6 +8,7 @@ import store from './components/Redux/Store'
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 import AddProducts from './components/AddProducts/AddProducts';
 import SingleProduct from './components/SingleProduct/SingleProduct';
+import LoginPage from './components/LoginPage/LoginPage';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route element={<App />} path='/' />
         <Route element={<AddProducts />} path='/sell' />
         <Route element={<SingleProduct />} path='/:name' />
+        <Route element={<LoginPage />} path='/login' />
       </Routes>
     </Router>
   </Provider>,

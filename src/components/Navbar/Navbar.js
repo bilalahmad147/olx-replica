@@ -17,7 +17,7 @@ function Navebar() {
                         <Form.Control className={style.searchbar2} size="lg" type="search" placeholder="Find Cars, Mobile Phones and more.." />
                         <Button variant="primary">&#128269;</Button>
                     </Form>
-                    <Button className={style.navbarLogin} variant="link">Login</Button>
+                    <Link to='/login'><Button className={style.navbarLogin} variant="link">Login</Button></Link>
                     <Link to='/Sell'><Button className={style.sellBtn} variant="danger">+SELL</Button></Link>
                 </Navbar.Collapse>
             </Navbar>
