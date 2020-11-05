@@ -3,6 +3,9 @@ import { useParams, Link } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import style from './singleProduct.module.css'
+import Navebar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer';
+import Footer2 from '../Footer2/Footer2';
 
 
 function SingleProduct() {
@@ -24,22 +27,27 @@ function SingleProduct() {
     console.log(price)
 
     return (
-        <div className={style.mainDiv}>
-            <h1>ITEM DETAIL</h1>
-            <div  className={style.childDiv}>
-                <h2>Item Name : {name}</h2>
-                <h2>Item Price : {price}</h2>
-                <img className={style.objImg} alt={name} src={imgUrl} /> <br /><br />
-                <div className={style.detail}>
-                    <Link to='/'>
-                        <Button className={style.detailBtn} variant="primary">HIDE DETAIL</Button>
-                    </Link>
+        <div>
+            <Navebar />
+            <div className={style.mainDiv}>
+                <h1>ITEM DETAIL</h1>
+                <div className={style.childDiv}>
+                    <h2>Item Name : {name}</h2>
+                    <h2>Item Price : {price}</h2>
+                    <img className={style.objImg} alt={name} src={imgUrl} /> <br /><br />
+                    <div className={style.detail}>
+                        <Link to='/'>
+                            <Button className={style.detailBtn} variant="primary">HIDE DETAIL</Button>
+                        </Link>
+                    </div>
+                    <br />
                 </div>
+
+                <br />
                 <br />
             </div>
-
-            <br />
-            <br />
+            <Footer />
+            <Footer2 />
         </div>
     )
 }

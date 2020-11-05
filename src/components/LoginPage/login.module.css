@@ -1,6 +1,8 @@
 .heading1{
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
     width: 250px;
+    margin-top: 65px;
+    margin-bottom: 10px;
 }
 .loginPage{
     margin: 0 auto 0px auto;
@@ -8,6 +10,7 @@
     padding: 20px;
     border: 1px solid black;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .loginDiv{
     text-align: center;

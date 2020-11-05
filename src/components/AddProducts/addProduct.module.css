@@ -10,6 +10,8 @@
 .mainDiv{
     margin: 0 auto;
     width: 60%;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 .childDiv{
     border: 1px solid black;

@@ -7,8 +7,10 @@ function Navebar() {
     return (
         <div className={style.mainDiv}>
             <Navbar fixed="top" bg="light" expand="lg">
-                <Navbar.Brand href="#home">
-                    <img className={style.logo} alt="logoImg" src="https://banner2.cleanpng.com/20180419/lve/kisspng-olx-classified-advertising-company-entrepreneurshi-5ad85872d81723.1584106915241278588851.jpg" />
+                <Navbar.Brand>
+                    <Link to='/'>
+                        <img className={style.logo} alt="logoImg" src="https://banner2.cleanpng.com/20180419/lve/kisspng-olx-classified-advertising-company-entrepreneurshi-5ad85872d81723.1584106915241278588851.jpg" />
+                    </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
