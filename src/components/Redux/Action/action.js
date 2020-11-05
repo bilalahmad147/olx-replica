@@ -4,7 +4,7 @@ export const addDetail = (name, price, imgUrl) => ({
     type: ADD_DETAIL,
     payload: {
         name: name,
-        desc: price,
+        price: price,
         imgUrl: imgUrl
     }
 })

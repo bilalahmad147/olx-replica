@@ -20,7 +20,8 @@ function SingleProduct() {
         return <h1>Not Found at this URL</h1>
     }
 
-    var { price, imgUrl } = itemNum
+    let { price, imgUrl } = itemNum
+    console.log(price)
 
     return (
         <div className={style.mainDiv}>
