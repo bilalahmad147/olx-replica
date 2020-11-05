@@ -26,13 +26,18 @@ function SingleProduct() {
     return (
         <div className={style.mainDiv}>
             <h1>ITEM DETAIL</h1>
-            <h2>Item Name : {name}</h2>
-            <h2>Item Price : {price}</h2>
-            <img alt={name} src={imgUrl} /> <br /><br />
-            <Link to='/'>
-                <Button variant="primary">HIDE DETAIL</Button>
-            </Link>
-            <br />
+            <div  className={style.childDiv}>
+                <h2>Item Name : {name}</h2>
+                <h2>Item Price : {price}</h2>
+                <img className={style.objImg} alt={name} src={imgUrl} /> <br /><br />
+                <div className={style.detail}>
+                    <Link to='/'>
+                        <Button className={style.detailBtn} variant="primary">HIDE DETAIL</Button>
+                    </Link>
+                </div>
+                <br />
+            </div>
+
             <br />
             <br />
         </div>
