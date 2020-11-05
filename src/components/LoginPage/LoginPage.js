@@ -18,7 +18,7 @@ function LoginPage() {
                 console.log("User Successfully Registred")
             })
 
-            firebase.database().ref('/').child(`users${name}`).set(email)
+            firebase.database().ref('/').child(`users/${name}`).set(email)
 
             .catch(function (error) {
                 var errorMessage = error.message;
@@ -30,9 +30,12 @@ function LoginPage() {
         var provider = new firebase.auth.FacebookAuthProvider();
         firebase.auth().signInWithPopup(provider)
         .then(function (result) {
-            var token = result.credential.accessToken;
             var user = result.user;
             console.log(user)
+
+            let createUser = {
+                name: user.displayName,
+                email: user.email
         }).catch(function (error) {
             console.log(error.message)
         });
