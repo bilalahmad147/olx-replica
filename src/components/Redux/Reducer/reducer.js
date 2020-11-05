@@ -6,6 +6,18 @@ const initialState = {
         { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Hira", price: "first member" },
         { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Fizza", price: "first member" },
         { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Nabiha", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Tehreem", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Hira", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Fizza", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Nabiha", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Tehreem", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Hira", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Fizza", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Nabiha", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Tehreem", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Hira", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Fizza", price: "first member" },
+        { imgUrl:"https://avatarmaker.net/images/8.png" , name: "Nabiha", price: "first member" },
     ]
 }
 

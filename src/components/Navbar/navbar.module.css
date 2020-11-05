@@ -1,3 +1,6 @@
+.mainDiv{
+    display: flex;
+}
 .logo{
     width: 70px;
     height: 30px;
@@ -6,7 +9,7 @@
     display: flex;
 }
 .searchbar1{
-    width: 250px;
+    width: 30%;
     color: black;
 }
 .searchbar2{

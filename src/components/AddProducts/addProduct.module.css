@@ -1,6 +1,17 @@
 .formInput{
     width: 90%;
     margin: 0 auto;
-    border: 2px solid black;
     padding: 10px;
+}
+.heading1{
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+.mainDiv{
+    margin: 0 auto;
+    width: 60%;
+}
+.childDiv{
+    border: 1px solid black;
+    border-radius: 10px;
 }
