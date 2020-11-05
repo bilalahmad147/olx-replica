@@ -12,6 +12,12 @@
     width: 30%;
     color: black;
 }
+.searchbar1:focus{
+    border: solid black;
+}
+.searchbar2:focus{
+    border: solid black;
+}
 .searchbar2{
     margin-left: 10px;
     width: 750px;
