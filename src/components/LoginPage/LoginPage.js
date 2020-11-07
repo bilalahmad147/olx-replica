@@ -21,7 +21,7 @@ function LoginPage() {
                 console.log("User Successfully Registred")
             })
 
-        firebase.database().ref('/').child(`users/${name}`).set(email)
+        firebase.database().ref('/').child(`users/${name}`).set({ name, email })
 
             .catch(function (error) {
                 var errorMessage = error.message;
