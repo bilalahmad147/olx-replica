@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import Navebar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Footer2 from '../Footer2/Footer2'
+// import { storage } from '../Config/firebase';
 
 
 
@@ -16,6 +17,41 @@ function AddProducts() {
     const [name, setName] = useState('')
     const [price, setPrice] = useState('')
     const [imgUrl, setImgUrl] = useState('')
+
+    // function for uploading image to firebase storage
+
+
+    // const allInputs = { imgUrl: '' }
+    // const [imageAsFile, setImageAsFile] = useState('')
+    // const [imageAsUrl, setImageAsUrl] = useState(allInputs)
+    // console.log(imageAsUrl)
+
+    // const handleImageAsFile = (e) => {
+    //     const image = e.target.files[0]
+    //     console.log(image)
+    //     setImageAsFile(im => (image))
+    // }
+
+
+    // const handleImageUpload = (e) => {
+    //     e.preventDefault()
+    //     console.log('start of upload')
+    //     const uploadTask = storage.ref(`/images/${imageAsFile.name}`).put(imageAsFile)
+    //     uploadTask.on('state_changed',
+    //         (snapShot) => {
+    //             console.log(snapShot)
+    //         },
+    //         (err) => {
+    //             console.log(err, 'here is error occured')
+    //         },
+    //         () => {
+    //             storage.ref('images').child(imageAsFile.name).getDownloadURL()
+    //                 .then(fireBaseUrl => {
+    //                     console.log(fireBaseUrl)
+    //                     setImageAsUrl(prevObject => ({ ...prevObject, imgUrl: fireBaseUrl }))
+    //                 })
+    //         })
+    // }
 
     return (
         <div>
@@ -42,7 +78,7 @@ function AddProducts() {
                         <Link to='/'>
                             <Button variant="primary" onClick={() => { dispatch(addDetail(name, price, imgUrl)) }}>
                                 Add Product
-                    </Button>
+                            </Button>
                         </Link>
                     </Form>
                 </div>
